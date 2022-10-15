@@ -72,6 +72,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+.flex-me {
+	display: flex;
+	justify-content: space-between;
+}
 /* Basic */
 
 	@-ms-viewport {
