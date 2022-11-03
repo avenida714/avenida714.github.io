@@ -76,6 +76,13 @@ input, select, textarea {
 	display: flex;
 	justify-content: space-between;
 }
+
+.flex-me-github {
+	display: flex;
+	justify-content:space-evenly;
+}
+
+
 /* Basic */
 
 	@-ms-viewport {
