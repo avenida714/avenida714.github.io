@@ -79,7 +79,7 @@ input, select, textarea {
 
 .flex-me-github {
 	display: flex;
-	justify-content:space-evenly;
+	justify-content:left;
 }
 
 
@@ -2566,6 +2566,7 @@ input, select, textarea {
 		border-bottom: none;
 		position: relative;
 		text-align: center;
+		margin-left: 15px;
 	}
 
 		.icon:before {
