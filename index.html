@@ -12,7 +12,35 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+		<style>
+			@keyframes bounce {
+				0%, 100% { transform: translateY(0); }
+				50% { transform: translateY(-20px); }
+			}
+			@keyframes hideLeft {
+				0%, 100% { transform: translateX(0); }
+				50% { transform: translateX(-20px); }
+			}
+			@keyframes squash {
+				0%, 100% { transform: scale(1); }
+				50% { transform: scale(1.1, 0.9); }
+			}
 
+			.items.style3.small section:hover {
+				transform: scale(1.3);
+				transition: transform 0.5s;
+			}
+
+			.bounce:hover {
+				animation: bounce 0.5s ease-in-out infinite;
+			}
+			.hideLeft:hover {
+				animation: hideLeft 0.5s ease-in-out infinite;
+			}
+			.squash:hover {
+				animation: squash 0.5s ease-in-out infinite;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -271,170 +299,171 @@
 					</section> -->
 
 				<!-- Six -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>My Skills</h2>
-							<!-- <p>https://devicon.dev/</p> -->
-							<div class="items onscroll-fade-in style3 small">
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+
+				<section class="wrapper style1 align-center">
+					<div class="inner">
+						<h2>My Skills</h2>
+						<div class="items onscroll-fade-in style3 small">
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+								<h3>JavaScript</h3>
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+
+								<h3>Python</h3>
+
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+
+								<h3>React</h3>
+
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
+
+								<h3>Redux</h3>
+
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" />
+
+								<h3>Flask</h3>
+
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+
+								<h3>Express</h3>
+
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" />
+
+								<h3>Sequelize</h3>
+
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
 
 
-									<h3>JavaScript</h3>
+								<h3>PostreSQL</h3>
 
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
 
-									<h3>Python</h3>
+								<h3>Mongo DB</h3>
 
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
 
-									<h3>React</h3>
+								<h3>Node JS</h3>
 
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
 
-									<h3>Redux</h3>
+								<h3>NPM</h3>
 
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" />
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" />
 
-									<h3>Flask</h3>
+								<h3>Heroku</h3>
 
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
 
-									<h3>Express</h3>
+								<h3>Docker</h3>
 
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" />
-
-									<h3>Sequelize</h3>
-
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" />
 
 
-									<h3>PostreSQL</h3>
+								<h3>AWS S3</h3>
 
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
 
-									<h3>Mongo DB</h3>
+								<h3>Git</h3>
 
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-
-									<h3>Node JS</h3>
-
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
-
-									<h3>NPM</h3>
-
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" />
-
-									<h3>Heroku</h3>
-
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
-
-									<h3>Docker</h3>
-
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" />
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
 
 
-									<h3>AWS S3</h3>
+								<h3>CSS</h3>
 
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-
-									<h3>Git</h3>
-
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+							</section>
+							<section>
+								 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" />
 
 
-									<h3>CSS</h3>
+								<h3>Django</h3>
 
-								</section>
-								<section>
-									 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" />
-
-
-									<h3>Django</h3>
-
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
 
 
-									<h3>TypeScript</h3>
+								<h3>TypeScript</h3>
 
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" />
-
-
-									<h3>SQLAlchemy</h3>
-
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" />
 
 
-									<h3>HTML 5</h3>
+								<h3>SQLAlchemy</h3>
 
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
-
-
-									<h3>SQLite</h3>
-
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
 
 
-									<h3>Bootstrap</h3>
+								<h3>HTML 5</h3>
 
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-
-
-									<h3>Sass</h3>
-
-								</section>
-								<section>
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
 
 
-									<h3>Visual Studio Code</h3>
+								<h3>SQLite</h3>
 
-								</section>
-							</div>
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+
+
+								<h3>Bootstrap</h3>
+
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+
+
+								<h3>Sass</h3>
+
+							</section>
+							<section>
+								<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+
+
+								<h3>Visual Studio Code</h3>
+
+							</section>
 						</div>
-					</section>
+					</div>
+				</section>
+
+
+
+
 
 				<!-- Seven -->
 					<!-- <section class="wrapper style1 align-center">
@@ -493,6 +522,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				window.addEventListener('DOMContentLoaded', function (event) {
+					var animations = ['bounce', 'hideLeft', 'squash'];
+					var sections = document.querySelectorAll('.items.style3.small section');
+					for (var i = 0; i < sections.length; i++) {
+						var animation = animations[Math.floor(Math.random() * animations.length)];
+						sections[i].classList.add(animation);
+					}
+				});
+				</script>
 	</body>
 </html>
