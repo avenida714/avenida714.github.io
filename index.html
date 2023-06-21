@@ -17,9 +17,13 @@
 				0%, 100% { transform: translateY(0); }
 				50% { transform: translateY(-20px); }
 			}
-			@keyframes hideLeft {
+			@keyframes swim {
 				0%, 100% { transform: translateX(0); }
 				50% { transform: translateX(-20px); }
+			}
+			@keyframes hideMe {
+				0%, 100% { transform: translateX(0); }
+				50% { transform: translateX(20px); }
 			}
 			@keyframes squash {
 				0%, 100% { transform: scale(1); }
@@ -34,12 +38,16 @@
 			.bounce:hover {
 				animation: bounce 0.5s ease-in-out infinite;
 			}
-			.hideLeft:hover {
-				animation: hideLeft 0.5s ease-in-out infinite;
+			.hideMe:hover {
+				animation: hideMe 0.5s ease-in-out infinite;
+			}
+			.swim:hover {
+				animation: swim 1.5s ease-in-out infinite;
 			}
 			.squash:hover {
 				animation: squash 0.5s ease-in-out infinite;
 			}
+
 		</style>
 	</head>
 	<body class="is-preload">
@@ -524,10 +532,10 @@
 			<script src="assets/js/main.js"></script>
 			<script>
 				window.addEventListener('DOMContentLoaded', function (event) {
-					var animations = ['bounce', 'hideLeft', 'squash'];
-					var sections = document.querySelectorAll('.items.style3.small section');
-					for (var i = 0; i < sections.length; i++) {
-						var animation = animations[Math.floor(Math.random() * animations.length)];
+					let animations = ['bounce', 'swim', 'squash', 'hideMe'];
+					let sections = document.querySelectorAll('.items.style3.small section');
+					for (let i = 0; i < sections.length; i++) {
+						let animation = animations[Math.floor(Math.random() * animations.length)];
 						sections[i].classList.add(animation);
 					}
 				});
