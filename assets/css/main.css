@@ -8624,16 +8624,15 @@ input, select, textarea {
 			.items section img {
 				width: 70%;
 				height: auto;
-				/* Set the transform to ensure a smooth transition from non-hovered to hovered state */
 				transform: rotate(0deg);
 				overflow: hidden;
 				margin-bottom: 10px;
-				/* Keep the transition property for smooth transform */
-				transition: transform 0.3s ease-in-out;
+				/* Adjust the transition duration as needed */
+				transition: transform 4.0s ease-out;
 			}
 
 			.items section:hover img {
-				/* When the image is hovered, it starts the animation named 'rotate' that lasts 0.5s */
+				/* This starts the animation on hover */
 				animation: rotate 0.5s forwards;
 			}
 
@@ -8672,7 +8671,6 @@ input, select, textarea {
 
 			.emoji-rock {
 				display: inline-block;
-				/* Set animation to rock for 0.5s, repeat 8 times, linear timing function */
 				animation: rock 0.5s linear 8;
 			}
 
@@ -8680,3 +8678,36 @@ input, select, textarea {
 				display: inline-block;
 				animation: wave 2s ease-out;
 			}
+
+			@keyframes shootingStar {
+				from {
+					transform: translate(-50%, -50%);
+					opacity: 0;
+				}
+				to {
+					transform: translate(0, 0);
+					opacity: 1;
+				}
+			}
+
+			.banner .image img {
+				animation: shootingStar 2s ease-out forwards;
+			}
+
+			.banner .image .glow {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				animation: glow 2s ease-in-out infinite;
+				/* The glow effect will be delayed by 2 seconds to coincide with the end of the shootingStar animation */
+				animation-delay: 2s;
+			}
+
+			/* @keyframes glow {
+				0% {
+					box-shadow: 0 0 10px #FFFF00, 0 0 20px #00FF00, 0 0 30px #FF0000, 0 0 40px #FF0000;
+				}
+				100% {
+					box-shadow: 0 0 20px #FFFF00, 0 0 30px #00FF00, 0 0 40px #FF0000, 0 0 50px #FF0000;
+				}
+			} */
