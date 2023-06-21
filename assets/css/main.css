@@ -8612,3 +8612,71 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+			.items section {
+				position: relative;
+				width: 25%;
+				padding: 5px;
+				box-sizing: border-box;
+				text-align: center;
+			}
+
+			.items section img {
+				width: 70%;
+				height: auto;
+				/* Set the transform to ensure a smooth transition from non-hovered to hovered state */
+				transform: rotate(0deg);
+				overflow: hidden;
+				margin-bottom: 10px;
+				/* Keep the transition property for smooth transform */
+				transition: transform 0.3s ease-in-out;
+			}
+
+			.items section:hover img {
+				/* When the image is hovered, it starts the animation named 'rotate' that lasts 0.5s */
+				animation: rotate 0.5s forwards;
+			}
+
+			@keyframes rotate {
+				0% {
+					transform: rotate(-5deg);
+				}
+				50% {
+					transform: scale(1.5) rotate(20deg);
+				}
+				100% {
+					transform: rotate(-5deg);
+				}
+			}
+
+			@keyframes wave {
+				0%, 20%, 60%, 100% {
+					transform: rotate(0deg);
+				}
+				40% {
+					transform: rotate(-30deg);
+				}
+				80% {
+					transform: rotate(15deg);
+				}
+			}
+
+			@keyframes rock {
+				0%, 100% {
+					transform: translateY(0);
+				}
+				50% {
+					transform: translateY(-10px);
+				}
+			}
+
+			.emoji-rock {
+				display: inline-block;
+				/* Set animation to rock for 0.5s, repeat 8 times, linear timing function */
+				animation: rock 0.5s linear 8;
+			}
+
+			.emoji-wave {
+				display: inline-block;
+				animation: wave 2s ease-out;
+			}
