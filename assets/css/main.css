@@ -8870,3 +8870,7 @@ input, select, textarea {
 .first-item {
 	padding-top: 20px;
 }
+
+#no-cover {
+	object-fit: fill !important
+}
