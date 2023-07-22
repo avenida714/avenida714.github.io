@@ -8872,5 +8872,7 @@ input, select, textarea {
 }
 
 #no-cover {
-	object-fit: fill !important
+	object-fit:scale-down !important;
+	background-color:#ffffff !important;
+
 }
